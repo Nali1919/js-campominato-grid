@@ -27,7 +27,15 @@ button.addEventListener('click', function(){
         // genero click su cella
 
         addCellElement.addEventListener('click', function () {
-        console.log('cella click', i)
+            console.log('cella click', i)
+            
+            const cheNumero = pariODispari(i)
+            
+            if (cheNumero) {
+            addCellElement.classList.add ('pari')
+            } else {
+            addCellElement.classList.add ('dispari')
+            }
         })
 
      
@@ -39,3 +47,7 @@ button.addEventListener('click', function(){
 
 
 })
+
+function pariODispari(numero) {
+return numero%2===0
+}
