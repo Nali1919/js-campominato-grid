@@ -1,0 +1,19 @@
+body {
+    background-color: aqua;
+}
+
+.container-griglia {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell {
+    width: calc(100% / 10);
+    height: 100px;
+    text-align: center;
+}
