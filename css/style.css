@@ -1,19 +1,29 @@
+/* generics */
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
+    font-family: sans-serif;
     background-color: aqua;
 }
 
-.container-griglia {
-    max-width: 1200px;
+.container {
+    width: 1200px;
     margin: 0 auto;
 }
 
-#grid {
+#griglia {
     display: flex;
     flex-wrap: wrap;
 }
 
-.cell {
+
+.cella {
     width: calc(100% / 10);
     height: 100px;
-    text-align: center;
+    border: 1px black solid;
 }

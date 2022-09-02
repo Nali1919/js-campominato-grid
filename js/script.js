@@ -1,17 +1,41 @@
-console.log('Js is ok')
+console.log('js is ok')
 
-const buttonInizio = document.getElementById('bottone-inizio')
-console.log(buttonInizio)
 
-buttonInizio.addEventListener('click', function () {
-    console.log('oplà')
-    // elemento griglia 
-    const griglia = document.getElementById('griglia')
+console.log('JS OK');
 
-    griglia.innerHTML = ''
+// Collego button 
+const button = document.getElementById('button-griglia');
 
-    //creazione celle
-    
+button.addEventListener('click', function(){
+    console.log('mi hai cliccato');
+    // collego elemento alla griglia
+
+    const addgrid = document.getElementById('griglia');
+    addgrid.innerHTML = '';
+
+    // Creo celle con numero progressivo da 1 a 100
+    for (let i = 1; i <= 100; i++) {
+        
+        const addCellElement = document.createElement('div');  
+        
+        addCellElement.className = 'cella';
+
+        addCellElement.innerHTML = i; // inserisco numeri creati
+        
+        griglia.append(addCellElement);
+
+        // genero click su cella
+
+        addCellElement.addEventListener('click', function () {
+        console.log('cella click', i)
+        })
+
+     
+        griglia.append(addCellElement);
+    }
+
+
+
 
 
 })
