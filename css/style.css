@@ -11,6 +11,23 @@ body {
     background-color: aqua;
 }
 
+header {
+    height: 5vh;
+    background-color: black;
+    padding: 6px;
+    margin-bottom: 50px;
+}
+
+#button-griglia {
+    padding: 2px;
+    border-radius: 15px;
+    color: blue;
+    border: 0;
+
+
+}
+
+
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -36,5 +53,5 @@ body {
 }
 
 .dispari {
-    background-color: black;
+    background-color: green;
 }
